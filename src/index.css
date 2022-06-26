@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#030922] font-poppins
+    }
+};
+
+@layer components {
+  .active {
+    @apply text-blue-500
+  }
+    .animated-content {
+        animation: scrolling 20s linear infinite;
+      }
+      .animated-content:hover {
+        animation-play-state: paused;
+      }
+      .animated-content li {
+        width: 20%;
+      }
+      .content:before,
+      .content:after {
+        position: absolute;
+        top: 0;
+        width: 10rem;
+        height: 3em;
+        content: "";
+        z-index: 1;
+      }
+      .content:before {
+        left: 0;
+        background: linear-gradient(to right, #111 0%, transparent 100%);
+      }
+      .content:after {
+        right: 0;
+        background: linear-gradient(to left, #111 0%, transparent 100%);
+      }
+      @keyframes scrolling {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+}
