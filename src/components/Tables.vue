@@ -39,7 +39,7 @@ function priceChanged (value) {
         <input type="search" id="default-search" class="block py-2 pl-2 w-48 text-sm text-white bg-black rounded-md border border-gray-600 focus:ring-blue-500 focus:border-blue-500 focus:outline-none md:w-96" placeholder="Search" v-model="searchTerm">
     </div>
 
-    <div class="bg-white overflow-x-auto text-white bg-opacity-10 backdrop-filter backdrop-blur-lg mx-6">
+    <div class="bg-white overflow-x-auto text-white bg-opacity-10 backdrop-filter backdrop-blur-lg mx-6 rounded-md">
         <table class="table-fixed cursor-pointer">
         <thead>
         <tr class="text-left text-white text-sm">
